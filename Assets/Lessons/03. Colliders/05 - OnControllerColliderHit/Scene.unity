@@ -429,6 +429,7 @@ GameObject:
   - component: {fileID: 1570616161}
   - component: {fileID: 1570616160}
   - component: {fileID: 1570616166}
+  - component: {fileID: 1570616167}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -566,6 +567,19 @@ MonoBehaviour:
   characterController: {fileID: 1570616160}
   movementSpeed: 5
   rotationSpeed: 100
+--- !u!114 &1570616167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570616158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c20067e4d61c4295ad0cd44f9a685d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!65 &582827885917619686
 BoxCollider:
   m_ObjectHideFlags: 0
