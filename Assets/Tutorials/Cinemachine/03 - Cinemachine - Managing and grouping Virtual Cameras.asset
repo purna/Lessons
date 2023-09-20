@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ded89046a72f423f9b647fe4530dfb3, type: 3}
+  m_Name: 03 - Cinemachine - Managing and grouping Virtual Cameras
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: da3efebd4c67b45589344cfade0fe5da, type: 3}
+  title: 'Managing and grouping Virtual Cameras '
+  prevReadme: {fileID: 11400000, guid: 1f6693157680448ec9e020c0dd5774c1, type: 2}
+  nextReadme: {fileID: 11400000, guid: 7f7abbb47df744c499aa8fff499964b6, type: 2}
+  sections:
+  - name: Header -Managing ...
+    heading: 'Managing and grouping Virtual Cameras '
+    richText: 'A <b>manager</b> camera oversees many Virtual Cameras but acts as
+      a single Virtual Camera from the point of view of Cinemachine Brain and Timeline.
+
+
+      Cinemachine
+      includes these manager cameras:
+
+
+      Free Look Camera: an enhanced Orbital
+      Transposer. It manages three horizontal orbits, arranged vertically to surround
+      an avatar.
+
+
+      Mixing Camera: uses the weighted average of up to eight
+      child Virtual Cameras.
+
+
+      Blend List Camera: executes a sequence of blends
+      or cuts of its child Virtual Cameras.
+
+
+      Clear Shot Camera: picks the
+      child Virtual Camera with the best view of the target.
+
+
+      State-Driven
+      Camera: picks a child Virtual Camera in reaction to changes in animation state.
+
+
+      Because
+      manager cameras act like normal Virtual Cameras, you can nest them. In other
+      words, create arbitrarily complex camera rigs that combine regular Virtual
+      Cameras and manager cameras.
+
+
+'
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  isRoot: 0

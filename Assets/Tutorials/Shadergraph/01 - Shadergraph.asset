@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ded89046a72f423f9b647fe4530dfb3, type: 3}
+  m_Name: 01 - Shadergraph
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: da3efebd4c67b45589344cfade0fe5da, type: 3}
+  title: Shadergraph
+  prevReadme: {fileID: 0}
+  nextReadme: {fileID: 0}
+  sections:
+  - name: Header -Introduct...
+    heading: Introduction to ShaderGraph
+    richText: "In previous versions of Unity, the only way to create specialized
+      Materials was to program a custom shader or use an outside plugin. With the
+      release of 2018, Unity now has its own native Shader Graph, which can be used
+      to build visually complex Materials using nodes.\nUnlike the process of writing
+      code, saving, compiling, and testing in the Editor, the Shader Graph shows
+      you what\u2019s happening to the Material in real-time, allowing you to make
+      changes and experiment on the fly.\n"
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  - name: Header -1.Creatin...
+    heading: '1.Creating the Graph and First Nodes '
+    richText: "1. In the Project window, create a new folder named \u201CShader Graph\u201D.\n2.
+      Right-click in the Project window and from the Create flyout, navigate to Shader
+      and select Unlit Graph. A new Shader Graph will be generated in the Project
+      window (Figure 01).\n"
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  isRoot: 0

@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ded89046a72f423f9b647fe4530dfb3, type: 3}
+  m_Name: 01 - Cinemachine - Using Cinemachine
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: da3efebd4c67b45589344cfade0fe5da, type: 3}
+  title: Using Cinemachine
+  prevReadme: {fileID: 0}
+  nextReadme: {fileID: 11400000, guid: 1f6693157680448ec9e020c0dd5774c1, type: 2}
+  sections:
+  - name: Header -Using Cin...
+    heading: 'Using Cinemachine '
+    richText: Using Cinemachine requires a new way of thinking about working with
+      cameras. For example, you might have invested heavily in carefully scripted
+      camera behaviors. However, Cinemachine can give the same results, if not better,
+      in less time.
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  - name: Header -Virtual C...
+    heading: Virtual Cameras
+    richText: 'Cinemachine does not create new cameras. Instead, it directs a single
+      Unity camera for multiple shots. You compose these shots with <b>Virtual Cameras</b>.
+      Virtual Cameras move and rotate the Unity camera and control its settings.
+
+
+      The
+      Virtual Cameras are separate GameObjects from the Unity Camera, and behave
+      independently. They are not nested within each other. For example, a Scene
+      might look like this:'
+    ImageText: View Image
+    src: https://docs.unity3d.com/Packages/com.unity.cinemachine@2.9/manual/images/CinemachineSceneHierarchy.png
+    ImageIcon: {fileID: 2800000, guid: a1a42ef018442432f9b8cc40b8dcef37, type: 3}
+    linkText: 
+    url: 
+  - name: Header -Using noi...
+    heading: 
+    richText: 'The main tasks that the Virtual Camera does for you:
+
+
+      Positions
+      the Unity camera in the Scene.
+
+      Aims the Unity camera at something.
+
+      Adds
+      procedural noise to the Unity camera. Noise simulates things like handheld
+      effects or vehicle shakes.
+
+      Cinemachine encourages you to create many
+      Virtual Cameras. The Virtual Camera is designed to consume little processing
+      power. If your Scene is performance-sensitive, deactivate all but the essential
+      Virtual Cameras at any given moment for best performance.
+
+
+      It is recommended
+      that you use a single Virtual Camera for a single shot. Take advantage of this
+      to create dramatic or subtle cuts or blends. Examples:
+
+
+      For a cutscene
+      where two characters exchange dialog, use three Virtual Cameras: one camera
+      for a mid-shot of both characters, and separate Virtual Cameras for a close-up
+      of each character. Use Timeline to synchronize audio with the Virtual Cameras.
+
+
+      Duplicate
+      an existing Virtual Camera so that both Virtual Cameras are in the same position
+      in the Scene. For the second Virtual Camera, change the FOV or composition.
+      When a player enters a trigger volume, Cinemachine blends from the first to
+      the second Virtual Camera to emphasize a change in action.
+
+
+      One Virtual
+      Camera has control of the Unity camera at any point in time. This is the live
+      Virtual Camera. The exception to this rule is when a blend occurs from one
+      Virtual Camera to the next. During the blend, both Virtual Cameras are live.
+
+
+'
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  - name: Header -Cinemachi...
+    heading: 'Cinemachine Brain '
+    richText: "The Cinemachine Brain is a component in the Unity Camera itself. The
+      Cinemachine Brain monitors all active Virtual Cameras in the Scene. To specify
+      the next live Virtual Camera, you activate or deactivate the desired Virtual
+      Camera's game object. Cinemachine Brain then chooses the most recently activated
+      Virtual Camera with the same or higher priority as the live Virtual Camera.
+      It performs a cut or blend between the previous and new Virtual Cameras.\n\nTip:
+      Use Cinemachine Brain to respond to dynamic game events in real time. It allows
+      your game logic to control the camera by manipulating priorities. This is particularly
+      useful for live gameplay, where action isn\u2019t always predictable. Use Timeline
+      to choreograph cameras in predictable situations, like cutscenes. Timeline
+      overrides the Cinemachine Brain priority system to give you precise, to-the-frame
+      camera control."
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  - name: Header -Moving an...
+    heading: 'Moving and aiming '
+    richText: "Use the Body properties in a Virtual Camera to specify how to move
+      it in the Scene. Use the Aim properties to specify how to rotate it.\n\nA Virtual
+      Camera has two targets:\n\nThe Follow target specifies a GameObject for the
+      Virtual Camera to move with.\nThe Look At target specifies the GameObject to
+      aim at.\nCinemachine includes a variety of procedural algorithms to control
+      moving and aiming. Each algorithm solves a specific problem, and has properties
+      to customize the algorithm for your specific needs. Cinemachine implements
+      these algorithms as CinemachineComponent objects. Use the CinemachineComponent
+      class to implement a custom moving or aiming behavior.\n\nThe Body properties
+      offer the following procedural algorithms for moving the Virtual Camera in
+      a Scene:\n\nTransposer: Move in a fixed relationship to the Follow target,
+      with optional damping.\nDo Nothing: Do not move the Virtual Camera.\nFraming
+      Transposer: Move in a fixed screen-space relationship to the Follow target,
+      with optional damping.\nOrbital Transposer: Move in a variable relationship
+      to the Follow target, optionally accepting player input.\nTracked Dolly: Move
+      along a predefined path.\nHard Lock to Target: Use the same position at the
+      Follow target.\nThe Aim properties offer the following procedural algorithms
+      for rotating a Virtual Camera to face the Look At target:\n\nComposer: Keep
+      the Look At target in the camera frame, with compositional constraints.\nGroup
+      Composer: Keep multiple Look At targets in the camera frame.\nDo Nothing: Do
+      not rotate the Virtual Camera.\nPOV: Rotate the Virtual Camera based on the
+      user\u2019s input.\nSame As Follow Target: Set the camera\u2019s rotation to
+      the rotation of the Follow target.\nHard Look At: Keep the Look At target in
+      the center of the camera frame.\n"
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  - name: Header -Composing...
+    heading: Composing a shot
+    richText: 'The Framing Transposer, Composer, and Group Composer algorithms define
+      areas in the camera frame for you to compose a shot:
+
+
+      Dead zone: The
+      area of the frame that Cinemachine keeps the target in.
+
+
+      Soft zone:
+      If the target enters this region of the frame, the camera will re-orient to
+      put it back in the dead zone. It will do this slowly or quickly, according
+      to the time specified in the Damping settings.
+
+
+      Screen: The screen position
+      of the center of the dead zone. 0.5 is the center of the screen.
+
+
+      Damping:
+      Simulates the lag that a real camera operator introduces while operating a
+      heavy physical camera. Damping specifies quickly or slowly the camera reacts
+      when the target enters the soft zone while the camera tracks the target. Use
+      small numbers to simulate a more responsive camera, rapidly moving or aiming
+      the camera to keep the target in the dead zone. Larger numbers simulate heavier
+      cameras, The larger the value, the more Cinemachine allows the target to enter
+      the soft zone.
+
+
+      The Game Window Guides gives an interactive, visual
+      indication of these areas. The guides appear as tinted areas in the Game view.'
+    ImageText: View Image
+    src: https://docs.unity3d.com/Packages/com.unity.cinemachine@2.9/manual/images/CinemachineGameWindowGuides.png
+    ImageIcon: {fileID: 2800000, guid: 99f21567bccb24554a4cc4e9d14e5c03, type: 3}
+    linkText: 
+    url: 
+  - name: Header -Using noi...
+    heading: 
+    richText: "The clear area indicates the dead zone. The blue-tinted area indicates
+      the soft zone. The position of the soft and dead zones indicates the screen
+      position. The red-tinted area indicates the no pass area, which the target
+      never enters. The yellow square indicates the target.\n\nAdjust these areas
+      to get a wide range of camera behaviors. To do this, drag their edges in the
+      Game view or edit their properties in the Inspector window. For example, use
+      larger damping values to simulate a larger, heavier camera, or enlarge the
+      soft zone and dead zone to create an area in the middle of the camera frame
+      that is immune to target motion. Use this feature for things like animation
+      cycles, where you don\u2019t want the camera to track the target if it moves
+      just a little."
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  - name: Header -Using noi...
+    heading: 'Using noise to simulate camera shake '
+    richText: "Real-world physical cameras are often heavy and cumbersome. They are
+      hand-held by the camera operator or mounted on unstable objects like moving
+      vehicles. Use Noise properties to simulate these real-world qualities for cinematic
+      effect. For example, you could add a camera shake when following a running
+      character to immerse the player in the action.\n\nAt each frame update, Cinemachine
+      adds noise separately from the movement of the camera to follow a target. Noise
+      does not influence the camera\u2019s position in future frames. This separation
+      ensures that properties like <b>damping</b> behave as expected."
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  isRoot: 0

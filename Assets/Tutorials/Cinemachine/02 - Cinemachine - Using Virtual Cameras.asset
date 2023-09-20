@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ded89046a72f423f9b647fe4530dfb3, type: 3}
+  m_Name: 02 - Cinemachine - Using Virtual Cameras
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: da3efebd4c67b45589344cfade0fe5da, type: 3}
+  title: Virtual Cameras
+  prevReadme: {fileID: 11400000}
+  nextReadme: {fileID: 0}
+  sections:
+  - name: Header -Setting u...
+    heading: Setting up Virtual Cameras
+    richText: 'In your project, organize your Scene Hierarchy to have a single Unity
+      camera with a CinemachineBrain component and many Virtual Cameras.
+
+
+      To
+      add a <color=red> Virtual Camera </color>to a Scene:
+
+
+      In the Unity menu,
+      choose <b>GameObject > Cinemachine > Virtual Camera.</b>
+
+      Unity adds
+      a new GameObject with a Cinemachine Virtual Camera component. If necessary,
+      Unity also adds a Cinemachine Brain component to the Unity camera GameObject
+      for you.
+
+
+      Use the <b>Follow</b> property to specify a GameObject to
+      follow.
+
+      The Virtual Camera automatically positions the Unity camera
+      relative to this GameObject at all times, even as you move it in the Scene.
+
+
+      Use
+      the <b>Look At</b> property to specify the GameObject that the Virtual Camera
+      should aim at.
+
+      The Virtual Camera automatically rotates the Unity camera
+      to face this GameObject at all times, even as you move it in the Scene.
+
+
+      Customize
+      the Virtual Camera as needed.
+
+      Choose the algorithm for following and
+      looking at, and adjust settings such as the follow offset, the follow damping,
+      the screen composition, and the damping used when re-aiming the camera.
+
+
+'
+    ImageText: 
+    src: 
+    linkText: Read More
+    url: https://docs.unity3d.com/Packages/com.unity.cinemachine@2.9/manual/CinemachineSetUpVCam.html
+  isRoot: 0

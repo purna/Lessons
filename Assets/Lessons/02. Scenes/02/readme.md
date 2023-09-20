@@ -1,0 +1,1 @@
+https://docs.unity3d.com/2023.1/Documentation/Manual/HOWTO-UIScreenTransition.html

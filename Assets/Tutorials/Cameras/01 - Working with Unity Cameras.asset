@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ded89046a72f423f9b647fe4530dfb3, type: 3}
+  m_Name: 01 - Working with Unity Cameras
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: da3efebd4c67b45589344cfade0fe5da, type: 3}
+  title: Working with Unity Cameras
+  prevReadme: {fileID: 0}
+  nextReadme: {fileID: 0}
+  sections:
+  - name: Header -Summary
+    heading: Summary
+    richText: "In addition to the Cinemachine add-on, Unity offers a few stock camera
+      options: orthographic cameras, great for retro games; perspective cameras,
+      the classic 3D game and walkthrough standby; and physical cameras that work
+      like film cameras, great for matching live-action footage as well as giving
+      your project a cinematic feel, whether indie or big-budget blockbuster.\nIn
+      this tutorial, we\u2019ll explore these, creating one of each Camera type for
+      a specified purpose.\n"
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  - name: Header -1.Introdu...
+    heading: '1.Introduction '
+    richText: "In addition to the Cinemachine add-on, Unity offers a few stock camera
+      options: orthographic cameras, great for retro games; perspective cameras,
+      the classic 3D game and walkthrough standby; and physical cameras that work
+      like film cameras, great for matching live-action footage as well as giving
+      your project a cinematic feel, whether indie or big-budget blockbuster.\nIn
+      this tutorial, we\u2019ll explore these, creating one of each Camera type for
+      a specified purpose.\n"
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  - name: Header -2.Creatin...
+    heading: '2.Creating a Camera '
+    richText: "To create a Camera, select Camera from the GameObject drop-down. The
+      camera type and options are then set using the Camera\u2019s Inspector.\n"
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  - name: Header -3.Moving ...
+    heading: '3.Moving the Camera '
+    richText: 'The Camera can be moved via the normal Inspector tools. More intuitively,
+      the Camera can be moved (useful for 2D) or aligned (useful for 3D) to match
+      the Scene view. To navigate the Scene view, click and drag the middle mouse
+      button to move the Scene view Camera without rotating it. Hold ALT and Right
+      Mouse Button to dolly in/out of the Scene. Hold ALT and Left Mouse Button to
+      pan/tilt the Scene view Camera without moving it
+
+      To move or align the
+      Camera to/with the Scene view, select the Camera in the Hierarchy view and
+      select "Align With View" from the GameObject drop down menu.
+
+      To move
+      the Camera to the Scene view, select Move to View from the GameObject drop-down.
+
+      To
+      align the Camera to the Scene view, select it in the hierarchy and choose Align
+      with View from the GameObject drop-down.
+
+      All cameras are centred within
+      the frame, just as the lens of a camera is typically centred with respect to
+      the film/sensor plane. All cameras also have near and far clipping planes.
+      Objects closer than the near or farther than the far clipping plane are not
+      rendered.
+
+'
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  - name: Header -4.Orthogr...
+    heading: '4.Orthographic Cameras '
+    richText: "Orthographic cameras (Figures 01 and 02) do not use perspective or
+      foreshortening. An object viewed in an Orthographic Camera will always appear
+      the same size. A two-unit-high object will appear twice as tall as a one-unit-high
+      object, regardless of where the are in relation to each other and to the Camera.
+      Parallel lines and edges remain parallel.\nThe size of an Orthographic Camera
+      specifies how many Unity units fit vertically between the Camera and either
+      the top or bottom edge of the screen. In 2D projects, this is directly related
+      to the Pixels Per Unit setting for Sprites. For example, let\u2019s say we
+      have a 2D project where the Sprites are 16 pixels per unit tall and we want
+      to fit 12 Sprites vertically on screen. The Camera\u2019s orthographic size
+      would be set to six. Orthographic cameras are most often used in 2D projects,
+      but may also be used in 3D to avoid perspective distortion.\n"
+    ImageText: "Orthographic cameras (Figures 01 and 02) do not use perspective or
+      foreshortening. An object viewed in an Orthographic Camera will always appear
+      the same size. A two-unit-high object will appear twice as tall as a one-unit-high
+      object, regardless of where the are in relation to each other and to the Camera.
+      Parallel lines and edges remain parallel. The size of an Orthographic Camera
+      specifies how many Unity units fit vertically between the Camera and either
+      the top or bottom edge of the screen. In 2D projects, this is directly related
+      to the Pixels Per Unit setting for Sprites. For example, let\u2019s say we
+      have a 2D project where the Sprites are 16 pixels per unit tall and we want
+      to fit 12 Sprites vertically on screen. The Camera\u2019s orthographic size
+      would be set to six. Orthographic cameras are most often used in 2D projects,
+      but may also be used in 3D to avoid perspective distortion. "
+    src: https://connect-prd-cdn.unity.com/20201002/learn/images/a9fb1548-d17c-49a6-83b7-04cb1692d5f5_image2.png.2000x0x1.png
+    ImageIcon: {fileID: 2800000, guid: 89f9312f4612f4712bd91a90e17a84ea, type: 3}
+    linkText: 
+    url: 
+  - name: 'Image: '
+    heading: 
+    richText: 
+    ImageText: "Orthographic cameras (Figures 01 and 02) do not use perspective or
+      foreshortening. An object viewed in an Orthographic Camera will always appear
+      the same size. A two-unit-high object will appear twice as tall as a one-unit-high
+      object, regardless of where the are in relation to each other and to the Camera.
+      Parallel lines and edges remain parallel. The size of an Orthographic Camera
+      specifies how many Unity units fit vertically between the Camera and either
+      the top or bottom edge of the screen. In 2D projects, this is directly related
+      to the Pixels Per Unit setting for Sprites. For example, let\u2019s say we
+      have a 2D project where the Sprites are 16 pixels per unit tall and we want
+      to fit 12 Sprites vertically on screen. The Camera\u2019s orthographic size
+      would be set to six. Orthographic cameras are most often used in 2D projects,
+      but may also be used in 3D to avoid perspective distortion. "
+    src: https://connect-prd-cdn.unity.com/20201002/learn/images/941dc509-59a7-41f5-b40b-797aeb749dc4_image4.png.2000x0x1.png
+    ImageIcon: {fileID: 2800000, guid: 1a6b8111fd6654660a38f356834d1902, type: 3}
+    linkText: 
+    url: 
+  - name: Header -Orthograp...
+    heading: 
+    richText: "In this scenario, we\u2019ll create a Camera that scales cleanly to
+      any HD/4K+ resolution. We\u2019ll assume the user has set the game\u2019s art
+      to 16 pixels per unit.\nCreate a Camera by selecting Camera from the GameObject
+      drop-down.\nIn the Camera\u2019s Inspector, set the Projection to Orthographic.\nSet
+      the size to 11.25. We arrived at this number by taking half of the screen height
+      (360/2 = 180) and dividing it by the Pixels Per Unit setting to get 11.25.
+      We chose 640x360 because it scales cleanly into 1280x720, 1920x1080, 3840x2160,
+      etc.\n"
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  - name: Header -6.Perspec...
+    heading: '6.Perspective Cameras '
+    richText: "Perspective cameras (Figures 03 and 04) work similarly to cameras
+      in the real world. Objects farther away from the Camera appear smaller, and
+      lines and edges converge at some vanishing point(s). Where the Orthographic
+      Camera\u2019s coverage is specified by a size, the Perspective Camera has a
+      field of view. Perspective cameras are most often used in 3D projects, such
+      as games or walkthroughs, or anywhere the view needs to resemble that of a
+      real camera. Perspective cameras are also sometimes used in 2D projects for
+      the automatic parallax effect they offer.\n"
+    ImageText: 'Figure 03: Perspective Camera settings '
+    src: https://connect-prd-cdn.unity.com/20201002/learn/images/065eca1f-2748-488e-89c4-9f1f530bf285_image6.png.2000x0x1.png
+    ImageIcon: {fileID: 2800000, guid: 93dfa310492e64c71ae9366331487306, type: 3}
+    linkText: 
+    url: 
+  - name: Header -6.Perspec...
+    heading: 
+    richText: 
+    ImageText: 'Figure 04: The same Scene as seen from a Perspective Camera Figure
+      04: The same Scene as seen from a Perspective Camera '
+    src: https://connect-prd-cdn.unity.com/20201002/learn/images/39019a36-d4d9-4f56-a5dc-3a2366d5744a_image3.png.1400x0x1.png
+    ImageIcon: {fileID: 2800000, guid: 51ea72614db9a44db99ef06cede84109, type: 3}
+    linkText: 
+    url: 
+  - name: Header -7.Creatin...
+    heading: '7.Creating a Perspective Camera '
+    richText: "In this exercise, we\u2019ll create the equivalent of a 50mm lens
+      shooting on 35mm film. This is a common, all-purpose lens in photography that
+      simulates the way the human eye sees.\n\nCreate a Camera. By default, a newly
+      created Camera is set to Perspective mode with the Field of View Axis set to
+      Vertical.\nSet the FOV to 27.\n\nTry building a Scene that matches your physical
+      surroundings and place the camera at five virtual feet off the ground, or about
+      eye level for the average person. How does the Camera view match or differ
+      from your own view?\n"
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  - name: Header -8.Physica...
+    heading: 8.Physical Cameras
+    richText: "A third option, the Physical Camera (Figures 05 and 06), enables behavior
+      matching that of a film-based camera. This is great for simulating live-action
+      footage, as well as giving your project a cinematic feel. To create a Physical
+      Camera, set the camera\u2019s projection to Perspective and check the box marked
+      Physical Camera.\n\nIn addition to Field of View, the Physical Camera\u2019s
+      coverage can be specified by two related settings: Sensor Size, matching the
+      sensor size of a real or imaginary film camera, as well as Focal Length. The
+      Sensor Size is the physical size of the area onto which the image is rendered
+      (or \u201Cfilmed\u201D), and the Focal Length is the distance between the lens
+      and the film/sensor.\n"
+    ImageText: 'Figure 05: Physical Camera settings '
+    src: https://connect-prd-cdn.unity.com/20201002/learn/images/00d24eed-95b4-4985-9993-25e850a279a1_image1.png.1400x0x1.png
+    ImageIcon: {fileID: 2800000, guid: a2da5ac753f344029a762c310c2fd5f5, type: 3}
+    linkText: 
+    url: 
+  - name: Header -6.Perspec...
+    heading: 
+    richText: '
+
+'
+    ImageText: 'Figure 06: The same Scene as viewed by a Super 16mm movie camera '
+    src: https://connect-prd-cdn.unity.com/20201002/learn/images/9434321d-e948-4f41-9781-bd723bdf75a2_image5.png.1400x0x1.png
+    ImageIcon: {fileID: 2800000, guid: 25317aec70148461ab0e8b54990dd380, type: 3}
+    linkText: 
+    url: 
+  - name: Header -9.Creatin...
+    heading: '9.Creating a Physical Camera '
+    richText: "In this exercise, we\u2019ll pretend that we\u2019re about to shoot
+      a movie and we\u2019d like to try out different lenses and film formats to
+      decide which best matches the look we\u2019re after.\n\n- Create a Camera and
+      check the box labeled Physical.\n- Try various settings for the Sensor Size.
+      How does 70mm IMAX compare to Super 8 in your Scene? Try creating your own
+      custom film format.\n- Try experimenting with the focal length of the lens.\n-
+      Notice how Focal Length and Sensor Size (equivalent to film size for analog
+      media) are related. A lens of a certain focal length takes in a corresponding
+      amount of the Scene, but only the parts of the Scene that fall on the film/sensor
+      are viewed/recorded.\n- Try getting the same image with different Focal Length/Sensor
+      Size settings. .\nTry making a Medium Shot, Long Shot, Master Shot, Close Up,
+      etc.\n"
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  - name: Header -10.Conclu...
+    heading: '10.Conclusion '
+    richText: "Experiment with Unity\u2019s various built-in cameras to set the mood
+      and enhance the visual effects of your projects.\n"
+    ImageText: 
+    src: 
+    ImageIcon: {fileID: 0}
+    linkText: 
+    url: 
+  isRoot: 0
