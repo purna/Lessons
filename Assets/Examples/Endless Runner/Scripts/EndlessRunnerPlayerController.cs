@@ -41,7 +41,6 @@ public class EndlessRunnerPlayerController : MonoBehaviour
     private bool speedBoostActive = false;
     private Renderer playerRenderer; // Reference to the player's renderer.
 
-    private bool hasCollided = false; // Flag to track if the collision has occurred.
 
 
     private void Start()

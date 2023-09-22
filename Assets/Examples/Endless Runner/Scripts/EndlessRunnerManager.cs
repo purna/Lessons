@@ -17,7 +17,7 @@ public class EndlessRunnerManager : MonoBehaviour
    
     private void Start()
     {
-       
+        isGameStarted = false;
 
         // Hide the countdown text initially.
         if (countdownText != null)
@@ -31,8 +31,15 @@ public class EndlessRunnerManager : MonoBehaviour
 
     public void StartGame()
     {
-        isGameStarted = true;
-        playerController.StartGame();
+        
+        if (isGameStarted == false)
+        {
+            playerController.StartGame();
+
+            isGameStarted = true;
+        }
+
+        
 
 
         // Show the countdown text and start the timer.
