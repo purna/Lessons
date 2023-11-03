@@ -9,6 +9,8 @@ namespace Cainos.PixelArtTopDown_Basic
         public float speed;
 
         private Animator animator;
+        public bool deathState;
+
 
         private void Start()
         {

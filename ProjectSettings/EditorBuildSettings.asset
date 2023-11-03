@@ -4,11 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Examples/2D RPG Platformer/Scenes/Start.unity
-    guid: 77682cd5a3d8742c0bbcc16d4a770c4e
-  - enabled: 1
-    path: Assets/Examples/2D RPG Platformer/Scenes/Level.unity
-    guid: 7a5e8a0dac2e24977b9d8fb332fd1f72
+  m_Scenes: []
   m_configObjects: {}
