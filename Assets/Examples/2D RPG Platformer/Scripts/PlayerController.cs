@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -121,7 +122,7 @@ namespace Platformer
         {
             // You can implement your own logic here to determine if the player is falling.
             // For example, you can check if the player's vertical velocity is negative.
-            return GetComponent<Rigidbody>().velocity.y < 0;
+            return GetComponent<Rigidbody2D>().velocity.y < 0;
         }
 
         private void CheckGround()

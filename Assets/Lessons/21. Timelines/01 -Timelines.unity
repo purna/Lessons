@@ -425,7 +425,8 @@ PlayableDirector:
   - key: {fileID: 0}
     value: {fileID: 0}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - d32cfacf8fdac46c7b07d220665ed6e8: {fileID: 411453981255965997}
 --- !u!4 &743169566
 Transform:
   m_ObjectHideFlags: 0

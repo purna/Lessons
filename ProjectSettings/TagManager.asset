@@ -3,7 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Hazard
+  - Platform
+  - Pole
+  - Panel
+  - Spring
+  - Surface/Grass
+  - Surface/Wood
+  - Surface/Metal
+  - Volume/Water
+  - Interactive/Rail
+  - Hitbox
+  - Gravity Field
   layers:
   - Default
   - TransparentFX
@@ -11,6 +24,14 @@ TagManager:
   - 
   - Water
   - UI
+  - Post Processing
+  - 
+  - Ignore Projector
+  - Camera Obstructor
+  - Ignore Ledge Hanging
+  - Ignore Ledge Climbing
+  - Unstable Surface
+  - Ignore Wall Sliding
   - 
   - 
   - 
@@ -20,14 +41,6 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - Layer 1
-  - Layer 2
-  - Layer 3
   - 
   - 
   - 
@@ -40,13 +53,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Layer 1
-    uniqueID: 2425651459
-    locked: 0
-  - name: Layer 2
-    uniqueID: 4250941897
-    locked: 0
-  - name: Layer 3
-    uniqueID: 4189426099
     locked: 0
