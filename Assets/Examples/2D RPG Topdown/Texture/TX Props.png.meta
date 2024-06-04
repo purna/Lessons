@@ -252,7 +252,7 @@ TextureImporter:
       213: 21300164
     second: TX Props Well
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -344,6 +344,32 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -464,13 +490,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props Rune Pillar X2
+      name: TX Props Rune Pillar X2 Base
       rect:
         serializedVersion: 2
         x: 227
         y: 451
         width: 26
-        height: 52
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,9 +536,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 227
-        y: 355
+        y: 385
         width: 26
-        height: 66
+        height: 36
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,13 +553,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props Rune Pillar Broken
+      name: TX Props Rune Pillar Broken Base
       rect:
         serializedVersion: 2
         x: 227
         y: 291
         width: 26
-        height: 38
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1014,9 +1040,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 445
-        y: 419
+        y: 441
         width: 37
-        height: 73
+        height: 51
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1056,9 +1082,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 261
+        y: 290
         width: 32
-        height: 77
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1077,9 +1103,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 416
-        y: 261
+        y: 291
         width: 32
-        height: 57
+        height: 27
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1346,13 +1372,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props Well
+      name: TX Props Well Base
       rect:
         serializedVersion: 2
         x: 420
         y: 104
         width: 58
-        height: 49
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1362,6 +1388,153 @@ TextureImporter:
       bones: []
       spriteID: f9f70ad008ebefc4bb5915052e8339ff
       internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props Statue Base
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 416
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1989490aaba4445969cb26efe5f80b
+      internalID: 1667734797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props Pillar Base
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 260
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495105e831ea04554ade2d4b12154738
+      internalID: 1739223522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props Pillar Broken Base
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 261
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ff7707cd9964fd296ba679454f65b0
+      internalID: -397443127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props Rune Pillar X3 Base
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 355
+        width: 26
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f6d9f499574480bacb01f77d786d68
+      internalID: -1069621850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props Rune Pillar X2
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 481
+        width: 26
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb54a659693f4674bdd7a50629649e6
+      internalID: 1490959747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props Rune Pillar Broken
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 321
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3977c78077d154cd583711a772755dda
+      internalID: 418499302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props Well
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 134
+        width: 58
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4537fc33e1841b1a9a514c5eae17d7
+      internalID: 994669657
       vertices: []
       indices: 
       edges: []
@@ -1395,19 +1568,25 @@ TextureImporter:
       TX Props Gravestone B: 21300070
       TX Props Gravestone C: 21300072
       TX Props Pillar: 21300118
+      TX Props Pillar Base: 1739223522
       TX Props Pillar Broken: 21300120
+      TX Props Pillar Broken Base: -397443127
       TX Props Pot A: 21300090
       TX Props Pot B: 21300092
       TX Props Pot C: 21300094
       TX Props Road Sign E: 21300086
       TX Props Road Sign W: 21300088
-      TX Props Rune Pillar Broken: 21300060
+      TX Props Rune Pillar Broken: 418499302
+      TX Props Rune Pillar Broken Base: 21300060
       TX Props Rune Pillar Broken Glow: 21300064
-      TX Props Rune Pillar X2: 21300042
+      TX Props Rune Pillar X2: 1490959747
+      TX Props Rune Pillar X2 Base: 21300042
       TX Props Rune Pillar X2 Glow: 21300044
       TX Props Rune Pillar X3: 21300058
+      TX Props Rune Pillar X3 Base: -1069621850
       TX Props Rune Pillar X3 Glow: 21300062
       TX Props Statue: 21300114
+      TX Props Statue Base: 1667734797
       TX Props Stone Bench E: 21300100
       TX Props Stone Bench S: 21300096
       TX Props Stone Bench W: 21300098
@@ -1422,7 +1601,8 @@ TextureImporter:
       TX Props Stone T5: 21300110
       TX Props Stone T6: 21300112
       TX Props Stone T7: 21300162
-      TX Props Well: 21300164
+      TX Props Well: 994669657
+      TX Props Well Base: 21300164
       TX Props Wooden Gate: 21300158
       TX Props Wooden Gate Opened: 21300160
   mipmapLimitGroupName: 

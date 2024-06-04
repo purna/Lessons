@@ -14,7 +14,6 @@ namespace Cainos.PixelArtTopDown_Basic
         {
             gameManager = GameObject.Find("GameManager").GetComponent<TopdownGameManager>();
 
-          
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -22,7 +21,21 @@ namespace Cainos.PixelArtTopDown_Basic
             if (other.gameObject.tag == "Coin")
             {
                 gameManager.coinsCounter += 1;
-                Destroy(other.gameObject);
+               
+                // Assuming 'other' is the collision object or some other context where you're getting the AudioSource from
+                AudioSource audioclip = other.gameObject.GetComponent<AudioSource>();
+
+                // Play the audio clip
+                audioclip.Play();
+
+                //Hide the game object
+                Renderer IsVisible = other.gameObject.GetComponent<Renderer>();
+                //Hide the coin
+                IsVisible.enabled = false;
+
+                // Destroy the game object after the audio clip has finished playing
+                Destroy(other.gameObject, audioclip.clip.length);
+
                 Debug.Log("Player has collected a coin!");
             }
 
