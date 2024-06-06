@@ -48,7 +48,14 @@ namespace Cainos.PixelArtTopDown_Basic
             {
                 //deathState = true; // Say to GameManager that player is dead
                 healthBar.TakeDamage(10);
-                Debug.Log("Player has 10 damage");
+
+                if (healthBar.currentHealth == 0)
+                {
+                    gameManager.livesCounter -= 1;
+                }
+
+
+                Debug.Log("Player has 10 damage. Current health is:" + healthBar.currentHealth);
             }
             else
             {

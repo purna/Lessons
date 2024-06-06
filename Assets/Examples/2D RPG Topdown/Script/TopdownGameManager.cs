@@ -10,11 +10,14 @@ namespace Cainos.PixelArtTopDown_Basic
     {
         public int coinsCounter = 0;
 
+        public int livesCounter = 3;
+
         public GameObject playerGameObject;
         private TopDownCharacterController player;
 
 
         public Text coinText;
+        public Text livesText;
 
         //public Transform[] respawnPoints; // Assign your respawn waypoints to this array
         //public float respawnDelay = 2.0f; // The delay before respawning the player
@@ -32,9 +35,13 @@ namespace Cainos.PixelArtTopDown_Basic
         void Update()
         {
             coinText.text = coinsCounter.ToString();
-            if(player.deathState == true)
+            livesText.text = livesCounter.ToString();
+
+            if (player.deathState == true)
             {
-                
+                //Remove a life
+                livesCounter = livesCounter - 1;
+
                 playerGameObject.SetActive(false);
                 //Change player to dead player prefab
                 player.deathState = false;
