@@ -18,6 +18,11 @@ TagManager:
   - Hitbox
   - Gravity Field
   - Coin
+  - Box
+  - Pick Up
+  - CinemachineTarget
+  - Waypoint
+  - FinishLine
   layers:
   - Default
   - TransparentFX
@@ -34,7 +39,7 @@ TagManager:
   - Unstable Surface
   - Ignore Wall Sliding
   - 
-  - 
+  - Ground
   - 
   - 
   - 
