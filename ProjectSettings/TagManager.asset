@@ -23,6 +23,12 @@ TagManager:
   - CinemachineTarget
   - Waypoint
   - FinishLine
+  - Lounge
+  - WaitingArea
+  - Home
+  - Door
+  - Cubicle
+  - Reception
   layers:
   - Default
   - TransparentFX
@@ -38,10 +44,10 @@ TagManager:
   - Ignore Ledge Climbing
   - Unstable Surface
   - Ignore Wall Sliding
-  - 
+  - Walls
   - Ground
-  - 
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - Layer 1

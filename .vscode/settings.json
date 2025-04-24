@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Lessons.sln"
+    "dotnet.defaultSolution": "Lessons.sln",
+    "FSharp.suggestGitignore": false
 }

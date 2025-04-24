@@ -14948,12 +14948,12 @@ PrefabInstance:
     - target: {fileID: 7873588928898685939, guid: 23035e71af28fbb46a389ba66a0a5430,
         type: 3}
       propertyPath: wall.m_Bits
-      value: 0
+      value: 1048576
       objectReference: {fileID: 0}
     - target: {fileID: 7873588928898685939, guid: 23035e71af28fbb46a389ba66a0a5430,
         type: 3}
       propertyPath: ground.m_Bits
-      value: 0
+      value: 32768
       objectReference: {fileID: 0}
     - target: {fileID: 7873588928898685944, guid: 23035e71af28fbb46a389ba66a0a5430,
         type: 3}
@@ -38559,6 +38559,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873588928898685939, guid: 23035e71af28fbb46a389ba66a0a5430,
+        type: 3}
+      propertyPath: wall.m_Bits
+      value: 1048576
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873588928898685939, guid: 23035e71af28fbb46a389ba66a0a5430,
+        type: 3}
+      propertyPath: ground.m_Bits
+      value: 32768
       objectReference: {fileID: 0}
     - target: {fileID: 7873588928898685944, guid: 23035e71af28fbb46a389ba66a0a5430,
         type: 3}
